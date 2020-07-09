@@ -1,7 +1,9 @@
 public class eBook extends Readable {
-    // Override
+    public eBook(String file) {
+        super(file);
+    }
+
     public int getPrice() {
-        // Override and only call the parent's constructor
-        // to get the base price
+        return super.getPrice();
     }
 }

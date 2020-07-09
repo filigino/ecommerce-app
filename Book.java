@@ -1,6 +1,9 @@
 public class Book extends Readable {
-    // Override
+    public Book(String file) {
+        super(file);
+    }
+
     public int getPrice() {
-        
+        return super.getPrice();
     }
 }

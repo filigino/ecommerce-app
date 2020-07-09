@@ -1,10 +1,23 @@
 public class Readable extends Item {
-    protected String authorName;
-    // Returns sNo, name, author, etc. in string
+    protected final String author;
+    protected final String info;
+
+    public Readable(String info) {
+        this.info = info;
+        String[] infoArr = info.split(",");
+        
+        this.sNo = Integer.parseInt(infoArr[0]);
+        this.name = infoArr[1];
+        this.author = infoArr[2];
+        this.price = Integer.parseInt(infoArr[3]);
+        this.quantity = Integer.parseInt(infoArr[4]);
+	}
+
     public String getInfo() {
-        // Override
+        return this.info;
     }
+
     public int getPrice() {
-        // Override
+        return this.price;
     }
 }

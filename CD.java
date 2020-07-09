@@ -1,6 +1,9 @@
 public class CD extends Audio {
-    // Override
+    public CD(String file) {
+        super(file);
+    }
+
     public int getPrice() {
-        // Override to get item price and add 2% enviro tax
+        return super.getPrice();
     }
 }

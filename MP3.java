@@ -1,6 +1,9 @@
 public class MP3 extends Audio {
-    // Override
+    public MP3(String file) {
+        super(file);
+    }
+
     public int getPrice() {
-        // Override and only call parent's getPrice() to get base price
+        return super.getPrice();
     }
 }
